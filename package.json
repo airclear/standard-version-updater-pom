@@ -46,6 +46,6 @@
     "test": "jest --verbose",
     "test:coverage": "rm -rf ./coverage && jest --coverage",
     "test:watch": "jest --watchAll",
-    "publish": "npm publish --registry=http://registry.npmjs.org"
+    "pub": "npm publish --registry=http://registry.npmjs.org"
   }
 }

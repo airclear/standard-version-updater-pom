@@ -1,13 +1,13 @@
 export function readVersion(contents: string): string {
-  const regex: RegExp = /<project[^<>]+>((?!<).)*[\s\S]*<version>(.+)<\/version>/;
+  const regex: RegExp = /<project[^<>]+>((?!parent\>).)*<version>(.+)<\/version>/;
   const found: RegExpMatchArray | null = contents.match(regex);
   if (found === null) {
     throw new Error("VERSION is not present.");
   }
-  if (typeof found[1] === "undefined" || found[1] === "") {
+  if (typeof found[2] === "undefined" || found[2] === "") {
     throw new Error("VERSION is empty.");
   }
-  return found[1];
+  return found[2];
 }
 
 export function writeVersion(contents: string, version: string): string {
