@@ -19,28 +19,25 @@ updater for Gradle build files.
 2. install this tool
 
 ```shell
-$ npm install --save-dev @airclear/standard-version-updater-pom
+$ npm install --save-dev standard-version-updater-pom
 ```
 
 ## Configuration
 
-Just use following updaters within
-`.versionrc.json` config file.
 
-```json
-{
-  "bumpFiles": [
-    {
-      "filename": "pom.xml",
-      "updater": "node_modules/@airclear/standard-version-updater-pom/dist/build-pom.js"
-    }
-  ],
-  "packageFiles": [
-    {
-      "filename": "pom.xml",
-      "updater": "node_modules/@airclear/standard-version-updater-pom/dist/build-pom.js"
-    }
-  ]
-}
+create `.versionrc.js` config file.
+
+```js
+// .versionrc.js
+const xmlUpdater = require('standard-version-updater-xml');
+
+const xmlTracker = {
+  filename: 'pom.xml',
+  updater: xmlUpdater,
+};
+
+module.exports = {
+  packageFiles: [xmlTracker],
+  bumpFiles: [xmlTracker],
+};
 ```
-
