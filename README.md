@@ -32,13 +32,13 @@ Just use following updaters within
   "bumpFiles": [
     {
       "filename": "pom.xml",
-      "updater": "node_modules/@damlys/standard-version-updater-gradle/dist/build-pom.js"
+      "updater": "node_modules/@airclear/standard-version-updater-gradle/dist/build-pom.js"
     }
   ],
   "packageFiles": [
     {
       "filename": "pom.xml",
-      "updater": "node_modules/@damlys/standard-version-updater-gradle/dist/build-pom.js"
+      "updater": "node_modules/@airclear/standard-version-updater-gradle/dist/build-pom.js"
     }
   ]
 }

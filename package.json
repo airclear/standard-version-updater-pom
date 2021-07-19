@@ -5,30 +5,31 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "The conventional-changelog/standard-version updater for Gradle build files.",
+  "description": "The conventional-changelog/standard-version updater for Pom.xml build files.",
   "keywords": [
     "conventional-changelog",
     "java",
+    "pom",
     "gradle",
     "standard-version",
     "standard-version-updater",
     "updater"
   ],
-  "author": "Damian Łysiak",
+  "author": "airclear",
   "contributors": [],
   "license": "UNLICENSE",
   "repository": {
     "type": "git",
-    "url": "https://github.com/damlys/standard-version-updater-gradle.git"
+    "url": "https://github.com/airclear/standard-version-updater-pom.git"
   },
   "bugs": {
-    "url": "https://github.com/damlys/standard-version-updater-gradle/issues"
+    "url": "https://github.com/airclear/standard-version-updater-pom/issues"
   },
   "files": [
     "dist"
   ],
-  "main": "dist/build-gradle.js",
-  "types": "dist/build-gradle.d.ts",
+  "main": "dist/build-pom.js",
+  "types": "dist/build-pom.d.ts",
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=5.6.0"
