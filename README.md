@@ -1,4 +1,4 @@
-# `standard-version-updater-gradle`
+# `standard-version-updater-pom`
 
 The
 [conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
@@ -6,8 +6,20 @@ updater for Gradle build files.
 
 ## Installation
 
+
+1. create `package.json` in the project root dir.
+
+```json
+{
+	"name": "you app name",
+	"version": "1.0.0"
+}
+```
+
+2. install this tool
+
 ```shell
-$ npm install --save-dev @damlys/standard-version-updater-gradle
+$ npm install --save-dev @airclear/standard-version-updater-pom
 ```
 
 ## Configuration
@@ -19,26 +31,16 @@ Just use following updaters within
 {
   "bumpFiles": [
     {
-      "filename": "build.gradle",
-      "updater": "node_modules/@damlys/standard-version-updater-gradle/dist/build-gradle.js"
+      "filename": "pom.xml",
+      "updater": "node_modules/@damlys/standard-version-updater-gradle/dist/build-pom.js"
+    }
+  ],
+  "packageFiles": [
+    {
+      "filename": "pom.xml",
+      "updater": "node_modules/@damlys/standard-version-updater-gradle/dist/build-pom.js"
     }
   ]
 }
 ```
 
-## Examples
-
-`build.gradle` file might look like that:
-
-```text
-name = "foo"
-version = "1.0.0"
-group = "bar"
-
-dependencies {
-  ...
-}
-```
-
-The `build-gradle.js` updater looks for
-a `version = "<semver>"` pattern and updates it.
