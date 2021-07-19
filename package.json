@@ -40,5 +40,5 @@
     "dev": "jest --watch",
     "test": "jest"
   },
-  "version": null
+  "version": "1.2.2"
 }
