@@ -45,6 +45,7 @@
     "lint:check": "eslint './**/*.{ts,tsx}'",
     "test": "jest --verbose",
     "test:coverage": "rm -rf ./coverage && jest --coverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "publish": "npm publish --registry=http://registry.npmjs.org"
   }
 }
