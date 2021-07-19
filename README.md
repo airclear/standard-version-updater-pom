@@ -29,7 +29,7 @@ create `.versionrc.js` config file.
 
 ```js
 // .versionrc.js
-const xmlUpdater = require('standard-version-updater-xml');
+const xmlUpdater = require('standard-version-updater-pom');
 
 const xmlTracker = {
   filename: 'pom.xml',
