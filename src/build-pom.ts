@@ -1,5 +1,5 @@
 export function readVersion(contents: string): string {
-  const regex: RegExp = /<project[^<>]+>[\s\S]*?<version>(.+)<\/version>/;
+  const regex: RegExp = /<project[^<>]+>((?!<).)*[\s\S]*<version>(.+)<\/version>/;
   const found: RegExpMatchArray | null = contents.match(regex);
   if (found === null) {
     throw new Error("VERSION is not present.");
