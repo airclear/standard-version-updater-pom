@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/airclear/standard-version-updater-pom/compare/v1.0.1...v1.1.0) (2021-07-19)
+
+
+### Features
+
+* modify package.json ([0ba8eeb](https://github.com/airclear/standard-version-updater-pom/commit/0ba8eeb833d764dcd5aa0826d3efc0bcd427dae9))
+
 ### [1.0.1](https://github.com/airclear/standard-version-updater-pom/compare/v1.0.0...v1.0.1) (2021-07-19)
 
 
